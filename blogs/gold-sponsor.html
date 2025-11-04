@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethical AI in Competition | IEEE BranchFest 2025 Blog</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/Logo/temp_logo_2.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      /* Custom styling for rich text content within the blog post */
+      .blog-content h2 {
+        /* Ensuring h2 size scales well */
+        @apply text-2xl md:text-3xl font-bold text-white mt-8 mb-4 border-l-4 border-teal-400 pl-4;
+      }
+      .blog-content p {
+        @apply text-gray-300 mb-6 leading-relaxed;
+      }
+      .blog-content ul {
+        @apply list-disc list-inside ml-6 mb-6 space-y-2 text-gray-300;
+      }
+      .blog-content strong {
+        @apply text-teal-400 font-semibold;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-900 text-gray-100">
+    <nav
+      class="fixed w-full bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 border-b border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <span class="text-2xl font-bold gradient-text"
+                >IEEE BranchFest</span
+              >
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="../index.html#about"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >About</a
+              >
+              <a
+                href="../index.html#competitions"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Competitions</a
+              >
+              <a
+                href="../index.html#jobfair"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Job Fair</a
+              >
+              <a
+                href="../index.html#sponsors"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Sponsors</a
+              >
+              <a
+                href="../blogs.html"
+                class="text-white bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+                aria-current="page"
+                >Blogs</a
+              >
+              <a
+                href="../index.html#contact"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              class="mobile-menu-button p-2 rounded-md text-gray-400 hover:text-white focus:outline-none"
+            >
+              <i data-feather="menu"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu hidden md:hidden bg-gray-900">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="../index.html#about"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800"
+            >About</a
+          >
+          <a
+            href="../index.html#competitions"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800"
+            >Competitions</a
+          >
+          <a
+            href="../index.html#jobfair"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800"
+            >Job Fair</a
+          >
+          <a
+            href="../index.html#sponsors"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800"
+            >Sponsors</a
+          >
+          <a
+            href="../blogs.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-800"
+            aria-current="page"
+            >Blogs</a
+          >
+          <a
+            href="../index.html#contact"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-24 pt-32 bg-gray-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <a href="../blogs.html" class="inline-flex items-center text-teal-400 hover:text-teal-300 transition duration-300 mb-6">
+            <i data-feather="arrow-left" class="w-5 h-5 mr-2"></i>
+            Back to All Blogs
+        </a>
+        
+        <header class="mb-10">
+          <span class="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2 block">
+            Technology & Competition
+          </span>
+          <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+            Unveiling the Power of Ethical AI in Competition
+          </h1>
+          <div class="flex flex-wrap items-center space-x-4 text-gray-500 text-md gap-y-2">
+            <div class="flex items-center">
+                <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                <span>October 28, 2025</span>
+            </div>
+            <div class="flex items-center">
+                <i data-feather="user" class="w-4 h-4 mr-1"></i>
+                <span>IEEE BUP Student Branch</span>
+            </div>
+            <div class="flex items-center">
+                <i data-feather="tag" class="w-4 h-4 mr-1"></i>
+                <span>Gold Sponsor Insight</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="mb-10">
+          <img
+            src="http://static.photos/technology/1024x576/100"
+            alt="AI ethics visualization"
+            class="w-full h-auto rounded-xl shadow-2xl"
+          />
+        </div>
+
+        <article class="blog-content">
+          <p>
+            The rapid advancement of Artificial Intelligence (AI) presents thrilling opportunities and complex challenges. At **IEEE BranchFest 2025**, we believe that the future of technology rests not just on raw innovation, but on a strong commitment to **ethical development**. This article, brought to you with insights from our Gold Sponsor, explores how we're integrating ethics into our technical competitions.
+          </p>
+
+          <h2>Why Ethics Matter in Tech Competitions</h2>
+          <p>
+            Competitions like our **Ethical Case Solving** event are designed to push participants beyond purely technical solutions. When developing an application, a self-driving system, or even a simple data model, developers must consider the social impact, bias, and potential misuse of their technology. Ignoring these factors leads to failures in deployment and, more critically, erosion of public trust.
+          </p>
+          <p>
+            Our Gold Sponsor emphasizes that industry leaders now seek graduates who demonstrate a **balanced understanding of technology and responsibility**. A competitive edge today involves not just speed and efficiency, but also **trustworthiness and fairness**.
+          </p>
+
+          <h2>The IEEE Code of Ethics: Our Guiding Star</h2>
+          <p>
+            The IEEE Code of Ethics serves as the foundation for ethical development globally. We encourage all BranchFest participants to be familiar with its core principles. These principles help structure problem-solving in a responsible way:
+          </p>
+          <ul>
+            <li>
+              **To hold paramount the safety, health, and welfare of the public:** Ensuring all technological output prioritizes human well-being.
+            </li>
+            <li>
+              **To avoid real or perceived conflicts of interest:** Maintaining integrity and transparency in all decision-making processes.
+            </li>
+            <li>
+              **To be honest and realistic in stating claims or estimates:** Promoting truthfulness about technical capabilities and limitations.
+            </li>
+            <li>
+              **To maintain and improve our technical competence:** Committing to lifelong learning in ethical standards as well as technical skills.
+            </li>
+          </ul>
+
+          <h2>Practical Application in BranchFest</h2>
+          <p>
+            In the **Design-A-Thon** and **IT Business Idea** competitions, teams are specifically judged on the ethical feasibility and societal impact section of their proposal. This ensures that a brilliant idea that could cause societal harm will not succeed. The focus is shifted to **sustainable, responsible innovation**.
+          </p>
+          <p>
+            By making ethical case solving a core component of the festival, IEEE BranchFest is preparing the next generation of engineers to face real-world dilemmas with confidence and integrity. We thank our Gold Sponsor for their continued support in championing this crucial aspect of technological development.
+          </p>
+          
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-yellow-500 mt-10">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">Sponsor Spotlight</h3>
+            <p class="text-gray-400">
+                This blog post is brought to you by the **Gold Tier Sponsor** of IEEE BranchFest 2025. Their commitment to ethical technology development is a testament to their leadership in the industry. Learn more about how you can partner with them at their exclusive job fair booth.
+            </p>
+          </div>
+        </article>
+
+        <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-8 mt-12 space-y-4 md:space-y-0">
+            <a href="../blogs.html" class="inline-flex items-center px-6 py-3 bg-gray-700 text-gray-300 font-medium rounded-lg hover:bg-gray-600 transition duration-300 w-full md:w-auto justify-center">
+                <i data-feather="arrow-left" class="w-5 h-5 mr-2"></i>
+                Return to Blogs List
+            </a>
+            <div class="flex items-center space-x-3 text-gray-400">
+                <span class="text-sm font-medium">Share:</span>
+                <a href="#" class="hover:text-teal-400 transition duration-300"><i data-feather="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-teal-400 transition duration-300"><i data-feather="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-teal-400 transition duration-300"><i data-feather="linkedin" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <span class="text-2xl font-bold gradient-text"
+              >IEEE BranchFest 2025</span
+            >
+            <p class="text-gray-400 mt-2">
+              November 28, 2025 | BUP Campus, Dhaka
+            </p>
+          </div>
+          <div class="flex flex-col items-center md:items-end">
+            <p class="text-gray-400 mb-4 text-center md:text-right">
+              Organized by IEEE BUP Student Branch, WIE Affinity Group, and
+              Computer Society Chapter
+            </p>
+            <p class="text-gray-500 text-sm">
+              &copy; 2025 IEEE BranchFest. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.querySelector(".mobile-menu-button");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Initialize feather icons
+      feather.replace();
+    </script>
+  </body>
+</html>
